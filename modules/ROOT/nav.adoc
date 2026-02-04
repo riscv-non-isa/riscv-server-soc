@@ -1,6 +1,6 @@
 .Server SoC Specification
 * xref:index.adoc[Server SoC Specification]
-* xref:server_soc_preamble.adoc[Preamble]
+* xref:server_soc_preamble.adoc[Copyright and License Preamble]
 * xref:server_soc_contributors.adoc[Contributors]
 * xref:server_soc_intro.adoc[Introduction]
 * xref:server_soc_requirements.adoc[Server SoC Requirements]
