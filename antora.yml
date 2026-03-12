@@ -6,5 +6,6 @@ nav:
 
 asciidoc:
   attributes:
-    page-pdf_url: ../hardware/server-soc/_attachments/riscv-server-soc.pdf
+    page-pdf_url: _attachments/riscv-server-soc.pdf
+    more_details_url: https://riscv.atlassian.net/wiki/spaces/HOME/pages/806617123/RISC-V+Server+SOC
     page-group: hardware
