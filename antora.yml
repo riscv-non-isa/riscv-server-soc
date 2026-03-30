@@ -7,6 +7,7 @@ nav:
 asciidoc:
   attributes:
     page-group: hardware
+    asamBibliography: 'ROOT:resources/server_soc.bib'
     page-card-description: 'Server-class SoC requirements and conventions.'
     page-release-date: 'February 2025'
     page-pdf_url: _attachments/riscv-server-soc.pdf
