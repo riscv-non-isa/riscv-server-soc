@@ -522,7 +522,7 @@ hierarchy domain originating at each PCIe root port.
     _The bit 3 of the Base Address Register used to called the “Prefetchable”
      bit and required PCIe functions to support 64-bit addressing for any BAR
      that requested "Prefetchable" memory space. The "Removing Prefetchable
-     Terminology" ECN <<PCI_PREF>> reworks the PCIe Base Specification to
+     Terminology" ECN xref:server_soc_bibliography.adoc#PCI_PREF[Removing Prefetchable Terminology ECN] reworks the PCIe Base Specification to
      remove Prefetchable terminology to more accurately reflect modern device
      and system requirements._
 
@@ -578,7 +578,7 @@ hierarchy domain originating at each PCIe root port.
      Prefetchable/Non-Prefetchable distinction was focused on PCI behaviors,
      and was not intended for software use in determining memory attributes
      and/or coding techniques. The "Removing Prefetchable Terminology" ECN
-     <<PCI_PREF>> reworks the PCIe Base Specification to remove Prefetchable
+     xref:server_soc_bibliography.adoc#PCI_PREF[Removing Prefetchable Terminology ECN] reworks the PCIe Base Specification to remove Prefetchable
      terminology._                                                             +
                                                                                +
     _See also the implementation note on optimizations based on restricted
@@ -1350,7 +1350,7 @@ data centers and enterprises.
              PCIe specification 6.0.
 |===
 
-Please refer to <<IOMMU>> for details on the IOMMU performance monitoring rules.
+Please refer to xref:server_soc_requirements.adoc#IOMMU[Input-Output Memory Management Unit (IOMMU)] for details on the IOMMU performance monitoring rules.
 
 <<<
 
