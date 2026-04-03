@@ -92,7 +92,7 @@
 [%header, cols="8,25"]
 |===
 | ID#            ^| Algorithm
-| ME_IOM_010_010 a| . Locate all IOMMUs reported by APCI and verify they are of
+| ME_IOM_010_010 a| . Locate all IOMMUs reported by ACPI and verify they are of
                       RIMT type.
                     . For each IOMMU, read the `capabilities` register and
                       verify that it supports version 1.0 of the RISC-V IOMMU
@@ -196,7 +196,7 @@
 [%header, cols="8,25"]
 |===
 | ID#            ^| Algorithm
-| MF_ECM_010_010 a| . Parse ACPI MCFG tables to local all ECAM ranges.
+| MF_ECM_010_010 a| . Parse ACPI MCFG tables to locate all ECAM ranges.
                     . For each 4 KiB range in the ECAM range, verify that the
                       following reads do not cause any errors or exceptions.
                       .. 4-bytes at offset 0 - vendor and device ID
@@ -211,11 +211,11 @@
                     . Capture timestamp B from `time` CSR.
                     . Verify that the two timestamps are at least 1000 ns apart.
 | MF_ECM_030_010 a| . Parse ACPI MCFG table and obtain ECAM ranges for all
-                      heirarchies.
+                      hierarchies.
                     . Verify that the ECAM ranges for each hierarchy are all
-                      contigous and the base address is naturally aligned to
+                      contiguous and the base address is naturally aligned to
                       the size.
-                    . Verify ranges of any two heirarchies do not overlap.
+                    . Verify ranges of any two hierarchies do not overlap.
 | MF_ECM_040_010 a| See MF_ECM_030_010.
 | MF_ECM_050_010 a| TBA.
 | MF_ECM_060_010 a| . This test requires an input parameter that indicates
@@ -539,7 +539,7 @@ mechanism in PCIe.
 | ID#            ^| Algorithm
 | MF_VSR_010_010 a| . Use PCIe discovery to locate all RCiEP, root ports, IOMMUs,
                       and host bridges.
-                    . For each dicovered function walk the PCIe capability list
+                    . For each discovered function walk the PCIe capability list
                       and verify that the capability ID is one of PCIe specified
                       capabilities.
 | MF_VSR_020_010 a| No tests.
@@ -610,7 +610,7 @@ No tests are defined for these requirements.
                     IOMMU in the test output log.
 | OE_QOS_050_010 a| If ACPI RQSC table is not present then this test is skipped.
 
-                    . Determine caches in the Soc from the ACPI PPTT table.
+                    . Determine caches in the SoC from the ACPI PPTT table.
                     . Determine if there is a capacity controller implemented by
                       that cache by looking up the cache ID in ACPI RQSC table
                       and report in test output log whether capacity allocation
@@ -663,7 +663,7 @@ These tests require the use of a vendor provided API to access the HPMs.
 [%header, cols="8,25"]
 |===
 | ID#            ^| Algorithm
-| OF_SPM_010_010 a| . Determine caches in the Soc from the ACPI PPTT table and
+| OF_SPM_010_010 a| . Determine caches in the SoC from the ACPI PPTT table and
                       obtain their cache IDs.
                     . Allocate two regions of memory.
                     . For each data cache:
