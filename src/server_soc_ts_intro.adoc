@@ -161,7 +161,7 @@ if they are not in this table).
 | SoC              | System on a chip, also referred as system-on-a-chip and
                      system-on-chip.
 | SPA              | Supervisor Physical Address: Physical address used to
-                     to access memory and memory-mapped resources.
+                     access memory and memory-mapped resources.
 | SPDM             | Follows DMTF Standard. Security Protocols and Data Models.
                      A standard for authentication, attestation and key exchange
                      to assist in providing infrastructure security enablement.
